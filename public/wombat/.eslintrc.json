@@ -1,0 +1,25 @@
+{
+   "env": {
+      "browser": true,
+      "node": true
+   },
+   "rules": {
+      "camelcase": "off",
+      "no-fallthrough": "off",
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "semi": [
+          "error",
+          "always"
+      ]
+   },
+   "globals": {
+      "WB_wombat_location": true
+   },
+   "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+   }
+}

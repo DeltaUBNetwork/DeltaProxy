@@ -1,0 +1,20 @@
+{
+  "files": {
+    "public/gamz.html": [
+      {
+        "id": "9b47d109-a4f8-43c5-afa3-a3f9c72c54e3",
+        "line": 1,
+        "version": 1,
+        "index": 8
+      }
+    ],
+    "public/uv/uv.config.js": [
+      {
+        "id": "f2e8ec73-f7fe-4912-87bc-c982e21a9049",
+        "line": 10,
+        "version": 15,
+        "index": 281
+      }
+    ]
+  }
+}

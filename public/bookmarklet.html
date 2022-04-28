@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="main.css">
+  <title>Delta unbI0cker (v.1.0)</title>
+<meta name="description" content="classified">
+<meta name="author" content="classified">
+    <meta property="og:title" content="SchoolzEZ (v.1.0)">
+<meta property="og:type" content="website">
+<meta property="og:description" content="classified">
+<meta property="og:image" content="/images/fed.png">
+    <link rel="icon" href="images/fed.png">
+<link rel="icon" href="images/fed.png" type="image/shortcut-icon">
+<link rel="apple-touch-icon" href="/images/fed.png">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
+     <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.min.js" integrity="sha256-FCz5ToEA27payrGYaVGRidiIA+68Z31TBXFzcIT1/gU=" crossorigin="anonymous"></script>
+
+
+
+  </head>
+  <body>
+     <div id="particles-js" class="fullwidth"></div>
+    
+      <header>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="bookmarklet.html"class='active'>bokmarklets</a></li>
+          <li><a href="pros.html">pr0xy</a></li>
+          <li><a href="gamz.html">gamz</a></li>
+          <li><a href="contact.html">contact</a></li>
+           <li><a href="config.html" >settings</a></li>
+        </ul>
+      </header>
+
+  
+    <hr class="hidehr">
+    <hr class="hrcolori">
+    <h1 class='title has-text-white'>Delta unbI0cker Bookmarklets</h1>
+   
+    <h2 class='subtitle has-text-white'>Bookmarklets you can use to enhance your experience.</h2>
+   <div class='buttons'>
+       
+   </div>
+    <div class='content'>
+      <p class='subtitle has-text-white'>
+        Bookmarklet #1: Inspect Element Subsitute
+        <br>
+      </p>
+      <pre>
+        javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
+      </pre>
+      <br>
+       <p class='subtitle has-text-white'>
+        Bookmarklet #2: Anti Tab-Close
+        <br>
+      </p>
+      <pre>
+        javascript:window.onbeforeunload = function() { return ""; };
+      </pre>
+      <br>
+       <p class='subtitle has-text-white'>
+        Bookmarklet #3: XRay Goggles
+        <br>
+      </p>
+      <pre>
+        javascript:(function(){var a=document.createElement("script");a.src="https://x-ray-goggles.mouse.org/webxray.js";a.className="webxray";a.setAttribute("data-lang","en-US");a.setAttribute("data-baseuri","https://x-ray-goggles.mouse.org");document.body.appendChild(a);}());
+      </pre>
+       <br>
+       <p class='subtitle has-text-white'>
+        Bookmarklet #4: JS Fontbomb
+        <br>
+      </p>
+      <pre>
+       javascript:(function () {var s = document.createElement('script');s.setAttribute('src', 'https://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());
+      </pre>
+       <br> 
+       <p class='subtitle has-text-white'>
+        Bookmarklet #3: XRay Goggles
+        <br>
+      </p>
+      <pre>
+        javascript:(function(){var a=document.createElement("script");a.src="https://x-ray-goggles.mouse.org/webxray.js";a.className="webxray";a.setAttribute("data-lang","en-US");a.setAttribute("data-baseuri","https://x-ray-goggles.mouse.org");document.body.appendChild(a);}());
+      </pre>
+       <br>
+       <p class='subtitle has-text-white'>
+        Bookmarklet #5: YT Video Downloader
+        <br>
+      </p>
+      <pre>
+        javascript: var regeX = /^.*(youtu.be\/|v\/|e\/|u\/\w+\/|embed\/|v=)([^#&\?]*).*/,
+getYTURL = location.href,
+video_id, match = getYTURL.match(regeX);
+if (match && 11 == match[2].length) {
+video_id = match[2];
+var url = "https://www.youtubnow.com/watch/?v=" + escape(video_id);
+(w = open(url, "w", "location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,width=500,height=800,modal=yes,dependent=yes")) ? setTimeout("w.focus()", 1E3): location = url
+} else alert(" That's Not a Valid YouTube URL, \n Need URL like this \n http://youtube.com/watch?v=KuUYePG6ygQ ");
+      </pre>
+    </div>
+     
+        <script defer="defer" src="ok.js"></script>
+     <script defer='defer'>
+      document.title=localStorage.getItem('tabSpoofTitle') || "Classes"
+
+
+document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoofIcon') || "https://ssl.gstatic.com/classroom/favicon.png" 
+    </script>
+      
+
+  </body>
+</html>
