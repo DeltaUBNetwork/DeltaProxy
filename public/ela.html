@@ -115,11 +115,92 @@ align-items: center;
       <h3 class='title has-text-white'id='maintype' style='font-family: "Anonymous Pro"; font-size:15px; font-style: italic;  font-weight: 200px; line-height: 49.5px; z-index: 1;
     '>If you want a new game in here fill out the form https://forms.gle/v3f3J8Aj3RoiB6LS9</h3>
     <br>
+    <div style='text-align: center;'>
+         <form
+        
+            class="daformlol"
+            action="activatePro"
+          id="daformlol"
+           
+          
+            role="search"
+            aria-label="Search"
+          style="
+          
+   
+  
+    height: 48px;
+            display: flex;
+    justify-content: center;
+        
+    position: relative;
+   
+    transition: border .08s ease;
+                   outline: solid 0px transparent;
+    border: solid 4px white;
+     margin: 0 auto;
+
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: rgb(0 0 0 / 25%) 0 1px;
+    box-shadow: inset rgb(43 89 80) 0 2px;
+    background-color: #222222;
+    border: 2px solid var(--nord9);
+    transition: 0.5s;
+    border-radius: 30px;
+    border-bottom: 3px solid blue;
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgb(57 72 235 / 65%);
+       height: 48px;
+              width: 50%;
+    opacity: 1;
+"
+        >
+            <input
+                class="search-form-home__q"
+                id="q"
+                maxlength="2048"
+                name="query"
+                autocapitalize="none"
+                autocomplete="off"
+                placeholder="SEARCH GAMES" 
+                spellcheck="false"
+                title="Search"
+                type="text"
+                value=""
+                role="searchbox"
+                aria-autocomplete="both"
+                aria-label="Search"
+                aria-haspopup="false"
+                dir="ltr"
+                
+                data-api-lang="english"
+                tabindex=1
+              style="background: transparent;
+    border: 0;
+    color: #f5f2f2;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    margin: 0;
+    outline: none;
+    padding: 10px 32px 13px 25px;
+    width: 100%;
+     
+
+
+"
+            >
+          
+        </form>
+   
+    </div>
+    <br>
     <div class='gamecontainer' style='display:grid;
  grid-template-columns:repeat(auto-fill,185px);
  justify-content:space-between;
  grid-gap:20px; margin-right: 15px;
-margin-left: 15px; margin-bottom: 15px;'>
+margin-left: 15px; margin-bottom: 15px;' >
       <button style='background: transparent; border: none;'  class='gambutton' onclick="openSite('https://surviv.io','proxied')">
         <figure>
           <img src="https://topbestalternative.com/wp-content/uploads/2020/02/surviv-io-logo.png" alt="WOD logo" style="border-radius: 10px; width:170px;
@@ -374,6 +455,21 @@ try {
  
   </script>
     
+<script>
+  const searchEl = document.getElementById('daformlol')
+  const x = document.querySelectorAll('.gambutton figure figcaption');
+  function search(e){
+  x.forEach((item,index) => {
+    if(!item.innerHTML.toLowerCase().includes(e.target.value)){
+      item.parentElement.parentElement.style.display = 'none';
+    }else {
+      item.parentElement.parentElement.style.display = 'block';
+    }
+  })
+}
 
+searchEl.addEventListener("keyup", search);   
+
+</script>
   </body>
 </html>
