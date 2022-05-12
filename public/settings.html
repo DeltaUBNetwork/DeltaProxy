@@ -1,0 +1,453 @@
+
+
+<!doctype html>
+<html>
+    <head>
+    
+            <title>Settings</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+            <meta name="referrer" content="origin">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
+               <link rel="stylesheet" href="sh.css">
+         <script defer="defer" src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.2/tsparticles.min.js" integrity="sha256-FCz5ToEA27payrGYaVGRidiIA+68Z31TBXFzcIT1/gU=" crossorigin="anonymous"></script>
+              <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="https://classroom.google.com/favicon.ico">
+
+    
+  <style>
+    
+    .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f44336;
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-shadow: 0 0 17px -5px rgb(57 72 235 / 65%);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #53d919;
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+    .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+       background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+
+.divider::after,
+.divider::before {
+  content: "";
+  border: 1px solid red;
+  box-shadow: 3px 3px 3px #6a0606;
+   background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+  flex: 1;
+}
+
+
+
+.divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+   
+    
+  </style>
+
+            <div>
+               
+                <div>
+                    
+        
+    
+    
+    <div class="mainnav" id="home"data-aos="fade-down"    data-aos-easing="linear"     data-aos-duration="700"style="position: auto; height: 63px; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 18.5714px;    border-radius: 50px;
+
+text-align: center;
+ box-shadow: 0 1px 2px #1a1414, 
+              0 2px 4px #1a1414, 
+              0 4px 8px #1a1414,
+ 0 8px 16px #1a1414;
+opacity: 0.6;
+display: flex;
+align-items: center;
+     background-color: #000000b6;
+ overflow: auto; ">
+      <p class="card-header-title has-text-white">Math Help School</p>
+    <ul style="list-style: none; padding: 5px 0px 5px 0px;align-items: center; text-align: center; margin-right: 5px;">
+
+      
+
+                    
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px;" href="index.html">Porxy</a>
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent;border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px;" href="ela.html">G@mes</a>
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: #fff; border-right: 4px solid transparent; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px;" href="apps.html">Apps</a>
+      <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent; color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px; " href="settings.html">Settings</a>
+   <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent; color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px; " href="help.html">Help</a>
+
+
+          
+       
+                  
+
+    </ul>
+</div>
+
+    <div style='width: 100%; position: relative;  text-align: center; margin: 0 auto;'>
+      <h1 style='color: #f5f2f2;'>Settings</h1>
+   
+      <br>
+       <div class="divider" style='color: #f5f2f2'>
+         TAB SETTINGS
+       </div>
+      <br>
+          <h2 style='color: #f5f2f2;'>The title you want the page to appear to teachers (Example: Priority - Google Drive)</h2>    
+    <br>
+        <form
+        
+            class="daformlol"
+            action="activatePro"
+          id="titleswitch"
+           
+          
+            role="search"
+            aria-label="Search"
+          style="
+          
+   
+  
+    height: 48px;
+            display: flex;
+    justify-content: center;
+        
+    position: relative;
+   
+    transition: border .08s ease;
+                   outline: solid 0px transparent;
+    border: solid 4px white;
+     margin: 0 auto;
+
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: rgb(0 0 0 / 25%) 0 1px;
+    box-shadow: inset rgb(43 89 80) 0 2px;
+    background-color: #222222;
+    border: 2px solid var(--nord9);
+    transition: 0.5s;
+    border-radius: 30px;
+    border-bottom: 3px solid blue;
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgb(57 72 235 / 65%);
+       height: 48px;
+              width: 50%;
+    opacity: 1;
+"
+        >
+            <input
+                class="search-form-home__q"
+                id="q"
+                maxlength="2048"
+                name="query"
+                autocapitalize="none"
+                autocomplete="off"
+                placeholder="enter title for tab spoof" 
+                spellcheck="false"
+                title="Search"
+                type="text"
+                value=""
+                role="searchbox"
+                aria-autocomplete="both"
+                aria-label="Search"
+                aria-haspopup="false"
+                dir="ltr"
+                
+                data-api-lang="english"
+                tabindex=1
+              style="background: transparent;
+    border: 0;
+    color: #f5f2f2;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    margin: 0;
+    outline: none;
+    padding: 10px 32px 13px 25px;
+    width: 100%;
+     
+
+
+"
+            >
+          
+            
+      
+
+       
+            <button class="search-form-home__button-desktop" type="submit" style="
+           
+    border: 0;
+              border-radius: 30px;
+              border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    flex: 0 0 38px;
+    height: 100%;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;">
+                <div class="ico-wrapper" style="
+                  height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;">
+                    <div class="ico" style="
+    height: 20px;
+    width: 20px;">></div>
+                </div>
+            </button>
+        </form>
+   
+         <br>
+          <h2 style='color: #f5f2f2;'>The URL of the page icon you want to show to teachers. Example: https://site.com/favicon.ico (works for most sites)</h2>     
+                <br>
+   
+        <form
+        
+            class="daformlol"
+            action="activatePro"
+          id="iconswitch"
+           
+          
+            role="search"
+            aria-label="Search"
+          style="
+          
+   
+  
+    height: 48px;
+            display: flex;
+    justify-content: center;
+        
+    position: relative;
+   
+    transition: border .08s ease;
+                   outline: solid 0px transparent;
+    border: solid 4px white;
+     margin: 0 auto;
+
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: rgb(0 0 0 / 25%) 0 1px;
+    box-shadow: inset rgb(43 89 80) 0 2px;
+    background-color: #222222;
+    border: 2px solid var(--nord9);
+    transition: 0.5s;
+    border-radius: 30px;
+    border-bottom: 3px solid blue;
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgb(57 72 235 / 65%);
+       height: 48px;
+              width: 50%;
+    opacity: 1;
+"
+        >
+            <input
+                class="search-form-home__q"
+                id="qi"
+                maxlength="2048"
+                name="query"
+                autocapitalize="none"
+                autocomplete="off"
+                placeholder="enter icon for tab spoof" 
+                spellcheck="false"
+                title="Search"
+                type="text"
+                value=""
+                role="searchbox"
+                aria-autocomplete="both"
+                aria-label="Search"
+                aria-haspopup="false"
+                dir="ltr"
+                
+                data-api-lang="english"
+                tabindex=1
+              style="background: transparent;
+    border: 0;
+    color: #f5f2f2;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    margin: 0;
+    outline: none;
+    padding: 10px 32px 13px 25px;
+    width: 100%;
+     
+
+
+"
+            >
+          
+            
+      
+
+       
+            <button class="search-form-home__button-desktop" type="submit" style="
+           
+    border: 0;
+              border-radius: 30px;
+              border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    flex: 0 0 38px;
+    height: 100%;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;">
+                <div class="ico-wrapper" style="
+                  height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;">
+                    <div class="ico" style="
+    height: 20px;
+    width: 20px;">></div>
+                </div>
+            </button>
+        </form>
+      <br>
+      <script>
+        function toggle(){
+          var eeee = document.getElementById('check');
+          localStorage.setItem('aboutcloak',eeee.checked);
+        }
+      </script>
+      <h2 style='color: #f5f2f2;'>About:Blank Cloak - This hides your screen from GoGuardian when using this.    
+    <label class="switch" style=' background-color: #f44336; margin-left: 10px;'>
+  <input type="checkbox" id='check' onclick='toggle()'>
+  <span class="slider"></span>
+  </label>
+      </h1>
+            
+                <br>
+    
+      <br>
+ 
+    <br>
+       <div class="divider" style='color: #f5f2f2'>
+        COSMETICS
+       </div>
+      <br></br>
+        <h1 style='color: #f5f2f2;'>Coming soon...</h1>
+   
+      
+
+    </div>
+
+            <!--      <h1 class='title has-text-white'>Math helper (1+1=3)!</h1>
+                </div>
+                <h1 class="subtitle">
+                   the worlds best math help website<br>
+                  https://replit-auth-test.oklolnojoe39.repl.co is a   Cool auth thing i made and I plan to implemet the auth into this to save logins easier also 1+1=3
+                </h1>-->
+            </div>
+            
+          
+       
+          
+
+
+
+    </div>
+      <script defer='defer'>
+      document.title=localStorage.getItem('tabSpoofTitle') || "Classes"
+
+
+document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoofIcon') || "https://ssl.gstatic.com/classroom/favicon.png" 
+    </script>
+      <script>
+        AOS.init();
+      </script>
+ <script defer="defer" src="ok.js"></script>
+      
+       
+              <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+          <script>
+            // Settings
+            var titleform = document.getElementById("titleswitch")
+              var iconform = document.getElementById("iconswitch")
+            var check = document.getElementById('check');
+            titleform.addEventListener('submit', async event => {
+  
+      event.preventDefault();
+          localStorage.setItem('tabSpoofTitle',document.getElementById('q').value);
+              document.title=document.getElementById('q').value;
+            })
+               iconform.addEventListener('submit', async event => {
+  
+      event.preventDefault();
+          localStorage.setItem('tabSpoofIcon',document.getElementById('qi').value);
+                 document.querySelector("link[rel*='icon']").href = document.getElementById('qi').value;
+                 
+            })
+            
+          </script>
+    </body>
+</html>

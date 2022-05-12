@@ -11,7 +11,7 @@ tsParticles.load("particles-js", {
     "preset": 'snow',
       "particles": {
       "number": {
-        "value": 150,
+        "value": 500,
         "density": {
           "enable": true,
           "value_area": 800
@@ -37,27 +37,27 @@ tsParticles.load("particles-js", {
       },
       "opacity": {
         "value": 0.5,
-        "random": false,
+        "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
-          "sync": false
+          "sync": true
         }
       },
-      "fpsLimit": 5,
+      "fpsLimit": 1,
       "size": {
         "value": 3,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 2,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
         "color": "#ffffff",
         "opacity": 0.4,
@@ -65,7 +65,7 @@ tsParticles.load("particles-js", {
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 3,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -73,8 +73,8 @@ tsParticles.load("particles-js", {
         "bounce": false,
         "attract": {
           "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
+          "rotateX": 300,
+          "rotateY": 500
         }
       }
     },
@@ -82,11 +82,11 @@ tsParticles.load("particles-js", {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "grab"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true

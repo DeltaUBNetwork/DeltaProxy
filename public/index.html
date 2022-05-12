@@ -24,7 +24,17 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       />
+       <link rel="icon" type="image/x-icon" href="https://classroom.google.com/favicon.ico">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
     <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -36,59 +46,147 @@
 
     
       
-   
+   <script>
+     if (localStorage.getItem('tabSpoofIcon') == null){
+       localStorage.setItem('tabSpoofIcon',"https://ssl.gstatic.com/classroom/favicon.png" )
+     }
+     if (localStorage.getItem('tabSpoofTitle') == null){
+      localStorage.setItem('tabSpoofTitle',"Classes" ) 
+     }
+     
+   </script>
+    <style>
+          .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+       background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+
+.divider::after,
+.divider::before {
+  content: "";
+  border: 1px solid red;
+  box-shadow: 3px 3px 3px #6a0606;
+   background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+  flex: 1;
+}
+
+
+.divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.5em;
+}
+    </style>
   </head>
   <body>
         <div id="particles-js" class="fullwidth"></div>
+<div style='text-align: center;'>
+    <div class="mainnav" id="home"data-aos="fade-down"    data-aos-easing="linear"     data-aos-duration="700"style="position: auto; height: max-content; width: 100%; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 18.5714px;    border-radius: 50px;
 
-      <nav class="navbar"data-aos="fade-down"    data-aos-easing="linear"     data-aos-duration="700">
-        <p class="card-header-title">
-           Math Help School
-        </p>
-        <div id="ididyourmother" class="navbar-menu is-fixed-top">
-          <div class="navbar-start">
-            <a class="navbar-item" id="active" id="home" href='index.html'>
-              Math
-            </a>
-      
-            
-            <a class="navbar-item">
-              Bookmarklets
-            </a>
-             <a class="navbar-item" href='science.html'>
-              Science
-            </a>
-           
-          </div>
-      
-         
-        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-</a>
+text-align: center;
+ box-shadow: 0 1px 2px #1a1414, 
+              0 2px 4px #1a1414, 
+              0 4px 8px #1a1414,
+ 0 8px 16px #1a1414;
+opacity: 0.6; 
+display: flex;
+align-items: center;
+     background-color: #000000b6;
+ overflow: auto; ">
+      <p class="card-header-title has-text-white">Math Help School <img src='DELTA.png' style='z-index: 0; height: 35px; width: 35px; margin-left: 10px; border-radius: 30px;'></p>
+     <ul style="list-style: none; padding: 5px 0px 5px 0px;align-items: center; text-align: center; margin-right: 5px;">
 
-<div class="navbar-menu" id="navMenu">
-</div>
+      
+
+                    
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px;" href="index.html">Porxy</a>
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent;border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px;" href="ela.html">G@mes</a>
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: #fff; border-right: 4px solid transparent; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px;" href="apps.html">Apps</a>
+      <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent; color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px; " href="settings.html">Settings</a>
+   <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent; color: #fff; display: inline-block; text-align: -webkit-match-parent; border-radius: 20px; " href="help.html">Help</a>
+
+
           
+       
+                  
+
+    </ul>
+<br>    
+    
+</div>
+</div>
+    
+
+    <br>
+    <div style='text-align: center;'>
+     
+      
+         <h3 class='title has-text-white'id='maintype' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; z-index: 1;
+    '>Access the internet unfiltered</h3>
+        <h3 class='subtitle has-text-white'id='maintype' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 25px; font-style: italic;  font-weight: 100px; line-height: 49.5px; z-index: 1;
+    '>Delta Network puts user privacy on top and allows you to visit the web safely, anonymously, and unfiltered.</h3>
+      <a style='width: 35%; border-radius: 5px;background-color: black;
+    color: white;
+    font-family: "Anonymous Pro"; font-size: 20px;    appearance: auto;
+    writing-mode: horizontal-tb !important;
         
-</nav>
-     <div class="card-content has-text-centered">
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;' href='#proxy'>Start Browsing Safer</a>
+      <!--   <h3 class='subtitle has-text-white'id='maintype' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 100px; line-height: 49.5px; z-index: 1;
+    '>SERVICES</h3>-->
+      <br>
+      <br>
+         <div class="divider" style='color: #fff;' style='font-size: 30; font-style: italic;  font-weight: 100px; line-height: 49.5px; z-index: 1;'>
+         WEB PR@XY 
+       </div>
+      
+     
+      <div></div>
+    </div>
+    </div>
+     <div class="card-content has-text-centered" id='proxy'>
       <div class='pre'data-aos="zoom-in-up"     data-aos-easing="ease-out-cubic"     data-aos-duration="1200" style="flex-direction: column;">
         <header class="card-header" style="box-shadow: 0 0.125em 0.25em rgba(255, 255, 255, 15%)">
           <p class="card-header-title">
              ~ (master)
           </p>
           </header>
-        <h3 class='subtitle'id='typehere' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; color: #29CB39;'></h3></div>
+        <h3 class='subtitle'id='typehere' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; color: #29CB39; display:inline;'></h3></div>
 
-        
+       
     </div>
      <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
         <script defer="defer" src="ok.js"></script>
      <script>
-     
+     var inFrame;
+try {
+    inFrame = window !== top
+} catch (e) {
+    inFrame = true
+}
 function e(){
   const form =  document.getElementById('actualPros')
 const input = document.getElementById('url');
@@ -102,11 +200,35 @@ form.addEventListener('submit', async event => {
     }).then(() => {
         let url = input.value.trim();
         if (!isUrl(url)) url = 'https://www.duckduckgo.com/?q=' + url;
-        else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+        else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'https://' + url;
+   let inFrame
 
+      if (localStorage.getItem('aboutcloak') == 'true' || localStorage.getItem('aboutcloak') == true){
+        const popup = open("about:blank", "_blank")
+    if (!popup || popup.closed) {
+        alert("Error")
+    } else {
+        const doc = popup.document
+        const iframe = doc.createElement("iframe")
+        const style = iframe.style
+        const link = doc.createElement("link")
 
+        doc.title = "Classes"
+        link.rel = "icon";
+        link.href = "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png";
+            iframe.src = window.location.origin + '/schoolMath/' + __uv$config.encodeUrl(url);  
+        style.position = "fixed"
+        style.top = style.bottom = style.left = style.right = 0
+        style.border = style.outline = "none"
+        style.width = style.height = "100%"
+
+        doc.body.appendChild(iframe)
+        
+        //location.replace("https://classroom.google.com")
+    }
+      } else {
         window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
- 
+      }
 });
       });
 function isUrl(val = ''){
@@ -114,24 +236,139 @@ function isUrl(val = ''){
     return false;
 };
 }
+    
+        
            function ok(){
           var typed = new Typed("#typehere", {
     strings: [
       /*"<pre class='command-line'>^50000",*/
-      `>>> School@Help:~$ cd math^700<br>>>> School@Help:~/math$ ./a.out^700<br>>>>Enter math question to proceed.<form id="actualPros" class="inputform"><h3 class='subtitle has-text-primary'id='typehere'></h3><input type="text" id="url" name="url"  class="inputbox" onfocus="e()"><input type="submit" class="oklol" value="&#xf002" style="font-family: 'Font Awesome\ 5 Free';font-weight: 900;">
-         
-
-      </form>`
+      `>>> School@Help:~$ cd math^700<br>>>> School@Help:~/math$ ./a.out^700<br>>>>Enter math question to proceed.`
 
     ],
     typeSpeed: 5,
     backDelay: 200,
-    backSpeed: 30
+    backSpeed: 30,
+           showCursor: true,
+  cursorChar: '|',
+    onComplete: (self) => {
+      document.querySelector('.typed-cursor').style.opacity = 1;
+      document.getElementById("typehere").innerHTML += `   <form
+        
+            class="actualPros"
+            action="activatePro"
+          id="actualPros"
            
+          
+            role="search"
+            aria-label="Search"
+          style="
+          
+   
+  
+    height: 48px;
+            display: flex;
+    justify-content: center;
+        
+    position: relative;
+   
+    transition: border .08s ease;
+                   outline: solid 0px transparent;
+    border: solid 4px white;
+     margin: 0 auto;
 
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: rgb(0 0 0 / 25%) 0 1px;
+    box-shadow: inset rgb(43 89 80) 0 2px;
+    background-color: #222222;
+    border: 2px solid var(--nord9);
+    transition: 0.5s;
+    border-radius: 30px;
+    border-bottom: 3px solid blue;
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgb(57 72 235 / 65%);
+       height: 48px;
+              width: 50%;
+    opacity: 1;
+"
+        >
+            <input
+                class="search-form-home__q"
+                id="url"
+                maxlength="2048"
+                name="query"
+                autocapitalize="none"
+                autocomplete="off"
+                placeholder="enter search term for pros only" 
+                spellcheck="false"
+                title="Search"
+onfocus="e()"
+
+                type="text"
+                value=""
+                role="searchbox"
+                aria-autocomplete="both"
+                aria-label="Search"
+                aria-haspopup="false"
+                dir="ltr"
+                
+                data-api-lang="english"
+                tabindex=1
+              style="background: transparent;
+    border: 0;
+    color: #f5f2f2;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    margin: 0;
+    outline: none;
+    padding: 10px 32px 13px 25px;
+    width: 100%;
+     
+
+
+"
+            >
+          
+            
+      
+
+       
+            <button class="search-form-home__button-desktop" type="submit" style="
+           
+    border: 0;
+              border-radius: 30px;
+              border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    flex: 0 0 38px;
+    height: 100%;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;">
+                <div class="ico-wrapper" style="
+                  height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;">
+                    <div class="ico" style="background: url(https://www.startpage.com/sp/cdn/images/magnifying-glass-grey.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;"></div>
+                </div>
+            </button>
+        </form>
+         
+
+      </form><br><a href="books.html">bookmarklets</a>`
+    },
   });
       }
-        
+   
    setTimeout(3500,ok())
 
    </script>
@@ -140,6 +377,58 @@ function isUrl(val = ''){
 
 
 document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoofIcon') || "https://ssl.gstatic.com/classroom/favicon.png" 
+    </script>
+    <script>
+      AOS.init();
+    </script>
+     <script>
+       /*
+         var contextMenu2 = document.getElementById('settingsMenu');
+         var er = document.querySelector('.navdrop');
+         er.onclick=eq;
+         var siopen = false
+        var cooldown = false;
+        const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
+         function eq(){
+
+
+          if (siopen == false){
+            contextMenu2.style.display = 'block';
+            siopen = true
+            animateCSS('.context-menu','bounceInRight').then((message) => {
+console.log(message)
+animateCSS('.context-menu','swing');
+            })
+          
+            
+          } else {
+            animateCSS('.context-menu','bounceOutRight').then((message) => {
+console.log(message)
+        
+              contextMenu2.style.display = 'none';
+           
+
+              siopen = false
+            })
+         
+          }
+        }*/
     </script>
  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.42.2/tsparticles.min.js" </script>
       <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@1/tsparticles.preset.snow.bundle.min.js"></script>

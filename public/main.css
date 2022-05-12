@@ -44,11 +44,11 @@
     --dark: #303030;
 }
 * {
-    margin: 0;
-    padding: 0; 
+   
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+  cursor: url("cursorpog.png") 16 16 , auto
 
   }body {
     width:  auto;
@@ -91,21 +91,18 @@ width: 100%;
     z-index: -1;
 }
 ::-webkit-scrollbar {
-  width: 20px;
-  background: #8a90df;
+  width: 7px;
 
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  background: #8a90df;
-  border-radius: 10px;
+background: linear-gradient(#3b3c4e,#43487a);
 }
  
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(37, 25, 143); 
-  border-radius: 10px;
+    background: #201d1d;
+    border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -230,7 +227,8 @@ a:hover{
 }
 
 .typed-cursor {
-  font-size: 15px;
+  font-size: 50px;
+  color: green;
 }
 
 .pre {font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;    border-radius: 50px;
@@ -354,3 +352,12 @@ header{
  
   
 */
+.gambutton:hover{
+  transition: ease 0.5s;
+  transform: scale(0.96,0.96) rotate(-2deg) perspective(100px);	
+  cursor: pointer;
+    background:#dd404028;
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgba(57, 72, 235, 0.65);
+
+}
