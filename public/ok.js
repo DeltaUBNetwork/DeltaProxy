@@ -11,7 +11,7 @@ tsParticles.load("particles-js", {
     "preset": 'snow',
       "particles": {
       "number": {
-        "value": 500,
+        "value": 20,
         "density": {
           "enable": true,
           "value_area": 800
@@ -21,10 +21,10 @@ tsParticles.load("particles-js", {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "polygon",
         "stroke": {
-          "width": 0,
-          "color": "#00ff00"
+          "width": 5,
+          "color": "#a2c4c9"
         },
         "polygon": {
           "nb_sides": 5
@@ -39,15 +39,15 @@ tsParticles.load("particles-js", {
         "value": 0.5,
         "random": true,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 1,
           "opacity_min": 0.1,
-          "sync": true
+          "sync": false
         }
       },
-      "fpsLimit": 1,
+      "fpsLimit": 0.1,
       "size": {
-        "value": 3,
+        "value": 30,
         "random": true,
         "anim": {
           "enable": false,
@@ -65,7 +65,7 @@ tsParticles.load("particles-js", {
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 2,
         "direction": "none",
         "random": true,
         "straight": false,

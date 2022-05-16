@@ -156,19 +156,21 @@ color: rgb(0, 255, 0);
    list-style: none;
      margin-left: 50px;
   color: #749220;
-    border-radius: 50px;
+  
     text-shadow: 0px 3px rgba(7, 97, 22, 0.5);
     text-align: center;
   
 }
 a:hover{
-    background:#dd404028;
-    border: 2px solid var(--nord8);
+  
+    
     box-shadow: 0 0 17px -1px rgba(57, 72, 235, 0.65);
 
   
 }
+
 .inputbox {
+  
   outline: solid 0px transparent;
   border: solid 4px white;
   width: 400px;
@@ -247,7 +249,7 @@ a:hover{
   position: relative;
   background-color: transparent;
   background: transparent;
-  border-radius: 30px;
+ border-radius: 10px;
 }
 .testanim:before{
   content: "";
@@ -256,9 +258,9 @@ a:hover{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1d1ace;
+  background-color: #a7252b;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   box-shadow: none;
 }
 .testanim:hover{
