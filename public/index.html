@@ -173,7 +173,7 @@ align-items: center;
              ~ (master)
           </p>
           </header>
-        <h3 class='subtitle'id='typehere' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; color: #29CB39; display:inline;'></h3></div>
+        <h3 class='subtitle'id='typehere' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; color: #29CB39; display:inline;'>>>> BROWSE SAFELY<br></h3></div>
 
        
     </div>
@@ -339,20 +339,7 @@ function isUrl(val = ''){
     
         
            function ok(){
-          var typed = new Typed("#typehere", {
-    strings: [
-      /*"<pre class='command-line'>^50000",*/
-      `>>> School@Help:~$ cd math^500<br>>>> School@Help:~/math$ ./a.out^500<br>>>>Enter math question to proceed.`
-
-    ],
-    typeSpeed: 0.00000000000000000000000000000000000000000000000000000000000000001,
-    backDelay: 200,
-    backSpeed: 30,
-           showCursor: true,
-  cursorChar: '|',
-    onComplete: (self) => {
-      document.querySelector('.typed-cursor').style.opacity = 1;
-      document.getElementById("typehere").innerHTML += `   <form
+     document.getElementById("typehere").innerHTML += `   <form
         
             class="actualPros"
             action="activatePro"
@@ -465,11 +452,9 @@ onfocus="e()"
          
 
       </form><br><h2>_</h2>`
-    },
-  });
       }
    
-   setTimeout(3500,ok())
+   setTimeout(1,ok())
 
    </script>
  <script defer='defer'>
