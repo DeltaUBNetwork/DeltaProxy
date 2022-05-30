@@ -166,15 +166,130 @@ align-items: center;
       <div></div>
     </div>
     </div>
-     <div class="card-content has-text-centered" id='proxy'>
-      <div class='pre'data-aos="zoom-in-up"     data-aos-easing="ease-out-cubic"     data-aos-duration="1200" style="flex-direction: column;">
-        <header class="card-header" style="box-shadow: 0 0.125em 0.25em rgba(255, 255, 255, 15%)">
-          <p class="card-header-title">
+  <div class="card-content has-text-centered" id='proxy'>
+    <!--
+      <div class='pre'data-aos="zoom-in-up"     data-aos-easing="ease-out-cubic"     data-aos-duration="1200" style="flex-direction: column;">-->
+        <header class="card-header" style="box-shadow: 0 0.125em 0.25em rgba(255, 255, 255, 15%)"data-aos="zoom-in-up"     data-aos-easing="ease-out-cubic"     data-aos-duration="1200" style="flex-direction: column;">
+         <!-- <p class="card-header-title">
              ~ (master)
-          </p>
+          </p>-->
           </header>
-        <h3 class='subtitle'id='typehere' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; color: #29CB39; display:inline;'>>>> BROWSE SAFELY<br></h3></div>
+        <h3 class='subtitle'id='typehere' style='margin-top: 35px; font-family: "Anonymous Pro"; font-size: 35px; font-style: italic;  font-weight: 200px; line-height: 49.5px; color: #29CB39; display:inline;' data-aos="zoom-in-up"     data-aos-easing="ease-out-cubic"     data-aos-duration="1200" style="flex-direction: column;">>>> BROWSE SAFELY<br></h3>
+<form 
+        
+            class="actualPros"
+            action="activatePro"
+          id="actualPros"
+           
+          
+            role="search"
+            aria-label="Search"
+  
+          style="
+          
+   
+  
+    height: 48px;
+            display: flex;
+    justify-content: center;
+        
+    position: relative;
+   
+    transition: border .08s ease;
+                   outline: solid 0px transparent;
+    border: solid 4px white;
+     margin: 0 auto;
 
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: rgb(0 0 0 / 25%) 0 1px;
+    box-shadow: inset rgb(43 89 80) 0 2px;
+    background-color: #222222;
+    border: 2px solid var(--nord9);
+    transition: 0.5s;
+    border-radius: 30px;
+    border-bottom: 3px solid blue;
+    border: 2px solid var(--nord8);
+    box-shadow: 0 0 17px -1px rgb(57 72 235 / 65%);
+       height: 48px;
+              width: 50%;
+    opacity: 1;
+"
+  data-aos="zoom-in-up"     data-aos-easing="ease-out-cubic"     data-aos-duration="1200" style="flex-direction: column;"
+        >
+            <input
+                class="search-form-home__q"
+                id="url"
+                maxlength="2048"
+                name="query"
+                autocapitalize="none"
+                autocomplete="off"
+                placeholder="enter search term for pros only" 
+                spellcheck="false"
+                title="Search"
+onfocus="e()"
+
+                type="text"
+                value=""
+                role="searchbox"
+                aria-autocomplete="both"
+                aria-label="Search"
+                aria-haspopup="false"
+                dir="ltr"
+                
+                data-api-lang="english"
+                tabindex=1
+              style="background: transparent;
+    border: 0;
+    color: #f5f2f2;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    margin: 0;
+    outline: none;
+    padding: 10px 32px 13px 25px;
+    width: 100%;
+     
+
+
+"
+            >
+          
+            
+      
+
+       
+            <button class="search-form-home__button-desktop" type="submit" style="
+           
+    border: 0;
+              border-radius: 30px;
+              border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    flex: 0 0 38px;
+    height: 100%;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;">
+                <div class="ico-wrapper" style="
+                  height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;">
+                    <div class="ico" style="background: url(https://www.startpage.com/sp/cdn/images/magnifying-glass-grey.svg) 50% 50% no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;"></div>
+                </div>
+            </button>
+        </form>
+         
+
+    
        
     </div>
     <br>
@@ -336,125 +451,9 @@ function isUrl(val = ''){
     return false;
 };
 }
-    
+    setTimeout(e,300)
         
-           function ok(){
-     document.getElementById("typehere").innerHTML += `   <form
-        
-            class="actualPros"
-            action="activatePro"
-          id="actualPros"
-           
-          
-            role="search"
-            aria-label="Search"
-          style="
-          
-   
-  
-    height: 48px;
-            display: flex;
-    justify-content: center;
-        
-    position: relative;
-   
-    transition: border .08s ease;
-                   outline: solid 0px transparent;
-    border: solid 4px white;
-     margin: 0 auto;
-
-    font-size: 20px;
-    font-weight: 500;
-    text-shadow: rgb(0 0 0 / 25%) 0 1px;
-    box-shadow: inset rgb(43 89 80) 0 2px;
-    background-color: #222222;
-    border: 2px solid var(--nord9);
-    transition: 0.5s;
-    border-radius: 30px;
-    border-bottom: 3px solid blue;
-    border: 2px solid var(--nord8);
-    box-shadow: 0 0 17px -1px rgb(57 72 235 / 65%);
-       height: 48px;
-              width: 50%;
-    opacity: 1;
-"
-        >
-            <input
-                class="search-form-home__q"
-                id="url"
-                maxlength="2048"
-                name="query"
-                autocapitalize="none"
-                autocomplete="off"
-                placeholder="enter search term for pros only" 
-                spellcheck="false"
-                title="Search"
-onfocus="e()"
-
-                type="text"
-                value=""
-                role="searchbox"
-                aria-autocomplete="both"
-                aria-label="Search"
-                aria-haspopup="false"
-                dir="ltr"
-                
-                data-api-lang="english"
-                tabindex=1
-              style="background: transparent;
-    border: 0;
-    color: #f5f2f2;
-    display: block;
-    font-size: 16px;
-    height: 48px;
-    margin: 0;
-    outline: none;
-    padding: 10px 32px 13px 25px;
-    width: 100%;
-     
-
-
-"
-            >
-          
-            
-      
-
        
-            <button class="search-form-home__button-desktop" type="submit" style="
-           
-    border: 0;
-              border-radius: 30px;
-              border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    cursor: pointer;
-    flex: 0 0 38px;
-    height: 100%;
-    padding: 0;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    display: block;">
-                <div class="ico-wrapper" style="
-                  height: 100%;
-    width: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;">
-                    <div class="ico" style="background: url(https://www.startpage.com/sp/cdn/images/magnifying-glass-grey.svg) 50% 50% no-repeat;
-    background-size: contain;
-    height: 20px;
-    width: 20px;"></div>
-                </div>
-            </button>
-        </form>
-         
-
-      </form><br><h2>_</h2>`
-      }
-   
-   setTimeout(1,ok())
 
    </script>
  <script defer='defer'>
