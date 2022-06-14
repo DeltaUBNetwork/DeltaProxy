@@ -11,7 +11,7 @@ tsParticles.load("particles-js", {
     "preset": 'snow',
       "particles": {
       "number": {
-        "value": 20,
+        "value": 10,
         "density": {
           "enable": true,
           "value_area": 800
@@ -47,7 +47,7 @@ tsParticles.load("particles-js", {
       },
       "fpsLimit": 0.1,
       "size": {
-        "value": 30,
+        "value": 25,
         "random": true,
         "anim": {
           "enable": false,

@@ -74,22 +74,21 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-    .divider {
+      .divider {
   display: flex;
   align-items: center;
   text-align: center;
-       background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+     
 }
 
 .divider::after,
 .divider::before {
   content: "";
   border: 1px solid red;
-  box-shadow: 3px 3px 3px #6a0606;
+
    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
   flex: 1;
 }
-
 
 
 .divider:not(:empty)::before {
@@ -113,10 +112,7 @@ input:checked + .slider:before {
        <div class="mainnav" id="home"data-aos="fade-down"    data-aos-easing="linear"     data-aos-duration="700"style="position: auto; height: max-content; width: 100%; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 18.5714px;  
 
 text-align: center;
- box-shadow: 0 1px 2px #1a1414, 
-              0 2px 4px #1a1414, 
-              0 4px 8px #1a1414,
- 0 8px 16px #1a1414;
+ box-shadow: 0 1px 2px #1a1414;
 opacity: 0.6; 
 display: flex;
 align-items: center;
@@ -129,7 +125,7 @@ align-items: center;
 
                     
 <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent; " class='testanim' href="index.html">Porxy</a>
-<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent;border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent;" href="ela.html" class='testanim' >G@mes</a>
+<a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent;border-right: 4px solid transparent;  color: #fff; display: inline-block; text-align: -webkit-match-parent;" href="ela.html" class='testanim' >G<wbr>am</wbr>es</a>
 <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; color: #fff; border-right: 4px solid transparent; display: inline-block; text-align: -webkit-match-parent; " href="apps.html" class='testanim' >Apps</a>
       <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent; color: #fff; display: inline-block; text-align: -webkit-match-parent; " href="settings.html" class='testanim' >Settings</a>
    <a style="padding: 10px 5px 10px 5px; border-left: 4px solid transparent; border-right: 4px solid transparent; color: #fff; display: inline-block; text-align: -webkit-match-parent; " href="help.html" class='testanim' >Help</a>
@@ -476,7 +472,7 @@ opacity: 0.9; padding: 70px 0;'>
     border-right: 4px solid transparent;
     color: #fff;
  
-    text-align: -webkit-match-parent;'>G@mes</a>
+    text-align: -webkit-match-parent;'>G<wbr>am</wbr>es</a>
              <a class='testanim' href='settings.html' style='padding: 10px 5px 10px 5px; display: block; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
@@ -537,7 +533,10 @@ document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoo
                  document.querySelector("link[rel*='icon']").href = document.getElementById('qi').value;
                  
             })
-            
+          let isTrueSet = (localStorage.getItem('aboutcloak') == 'true');
+
+         document.getElementById("check").checked = isTrueSet || false;   
           </script>
+     
     </body>
 </html>

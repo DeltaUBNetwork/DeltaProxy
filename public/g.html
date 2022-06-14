@@ -7,6 +7,8 @@
      <link rel="stylesheet" href="main.css">
   <title>school math help (v.2.0)</title>
 <meta name="description" content="School math help v 2.0">
+       <link rel="icon" type="image/x-icon" href="https://classroom.google.com/favicon.ico">
+
 <meta name="author" content="classified">
     <meta property="og:title" content="School math help v 2.0">
     
@@ -40,45 +42,7 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <style>
-      .custome{
-        ::-webkit-scrollbar {
-   width: 0.5em;
-   height: 0.5em;
-  }
-
-  ::-webkit-scrollbar-thumb {
-   background-color: rgba(255,255,255,.1);
-   border-radius: 3px;
-
-  
-  }
-      }
-          .      .divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-     
-}
-
-.divider::after,
-.divider::before {
-  content: "";
-  border: 1px solid red;
-
-   background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
-  flex: 1;
-}
-
-.divider:not(:empty)::before {
-  margin-right: 0.25em;
-}
-
-.divider:not(:empty)::after {
-  margin-left: 0.25em;
-}
-   
-    </style>
+    
       
    
   </head>
@@ -148,18 +112,23 @@ align-items: center;
         
 </nav>-->
     <br>
-    <div style='text-align: center'>
-      <div class='divider' style='color:#e5d7d7; font-size: 35px;'>Bookmarklets</div>
-      <br>
-      <h2 style='color: #e5d7d7; font-size: 20px;'>Inspect Element for Chromebooks</h2>      
-         <pre class="custome" style='border-radius: 30px; color: green; background-color: black;'>javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
-</pre>
-      <br>
-      <h2 style='color: #e5d7d7; font-size: 20px;'>Anti-Tab Close</h2>      
-         <pre class="custome" style='border-radius: 30px; color: green; background-color: black;'>        javascript:window.onbeforeunload = function() { return ""; };
-</pre>
-      <br>
-    </div>
+
+<div style="text-align: center;">
+  <h4 style='font-size: 18px; color: white; position: relative;'>Ice Dodo</h4>
+   <h4 style='font-size: 12px; color: white; position: relative;'>Ice Dodo is a game where you play as a ball and do obstacles and yeah its a fun game</h4>
+</div>
+    <br>
+
+<iframe src="https://ixlhelp.mmsmathhelp.me/schoolMath/hvtrs8%2F-olimndiqt%2Ccmm-iaefofo" style="position: relative; inset: 0px; outline: none;  display: block; margin-top: 0.1%; !important;height: 30em; width: 90%;margin: 0 auto; border: 5px solid gray; border-radius: 5px;"></iframe>
+  <div style="margin-right: 0.5rem;
+    margin-left: 0.5rem; display: flex; justify-content: flex-end;padding:5px;">
+     <button class="abutton" type="button" value="\e09f" style="font-family: 'Font Awesome\ 5 Free !important';font-weight: 900 !important;">
+OPEN
+     </button>
+     <button class="abutton" type="button" value="\e09f" style="font-family: 'Font Awesome\ 5 Free !important';font-weight: 900 !important;">
+FULLSCREEN
+     </button>
+  </div>
        <br>
     <footer style='background-color: #24262b; 	line-height: 1.5;
 opacity: 0.9; padding: 70px 0;'>
@@ -251,7 +220,6 @@ opacity: 0.9; padding: 70px 0;'>
      <a href='https://discord.gg/gy6JkF26mj'style='font-size: 50px; color: white; margin-bottom: 5px; position: relative;'>DISCORD SERVER&ensp;<i class="fa-brands fa-discord" style='border: solid 3px white; border-radius: 15px;'></i><a>
   </div>
     </footer>
-
         <script defer="defer" src="ok.js"></script>
       <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
@@ -263,14 +231,93 @@ document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoo
     <script>
       AOS.init();
     </script>
-
-
-    
+     
  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.42.2/tsparticles.min.js" </script>
       <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@1/tsparticles.preset.snow.bundle.min.js"></script>
 <script src = 'ok.js'></script>-->
 
+  <script>
+    
+        let inFrame
+
+try {
+    inFrame = window !== top
+} catch (e) {
+    inFrame = true
+}
+        function openSite (site, inMy) {
+        
+       if (inMy == "proxied"){window.navigator.serviceWorker.register('./sw.js', {
+                       scope: __uv$config.prefix
+            }).then(() => {
+
+          
+         if (true) {
+    var oklol = window.open("about:blank", "_blank")
+      if (!oklol || oklol.closed && !inFrame) {
+        window.location.href = window.location.origin + '/schoolMath/' + __uv$config.encodeUrl(site); // Geo Gebra
+        
+       
+      } else {
+        const doc = oklol.document
+        const iframe = doc.createElement("iframe")
+        const style = iframe.style
+        const link = doc.createElement("link")
+
+        doc.title = "Google Classroom"
+        link.rel = "icon";
+        link.href = "https://ssl.gstatic.com/classroom/favicon.png";
+        
+        iframe.src = window.location.origin + '/schoolMath/' + __uv$config.encodeUrl(site);  
+        
+        style.position = "fixed"
+        style.top = style.bottom = style.left = style.right = 0
+        style.border = style.outline = "none"
+        style.width = style.height = "100%"
+
+        doc.body.appendChild(iframe)
+
+        
+    }
+  } else {
+                    window.location.href = window.location.origin + '/schoolMath/' + __uv$config.encodeUrl(site); // Geo Gebra
  
+  }
+            });
+          
+          
+                 } else {
+          
+    if (true) {
+    var oklo = window.open("about:blank", "_blank")
+      if (!oklo || oklo.closed) {
+       location.href=`${window.location.origin}/gfiles/${site}/index.html`
+       
+      } else {
+        const doc = oklo.document
+        const iframe = doc.createElement("iframe")
+        const style = iframe.style
+        const link = doc.createElement("link")
+
+        doc.title = "Google Classroom"
+        link.rel = "icon";
+        link.href = "https://ssl.gstatic.com/classroom/favicon.png";
+       iframe.src=`${window.location.origin}/gfiles/${site}/index.html`     
+       
+        style.position = "fixed"
+        style.top = style.bottom = style.left = style.right = 0
+        style.border = style.outline = "none"
+        style.width = style.height = "100%"
+
+        doc.body.appendChild(iframe)
+
+    }
+
+       }
+                         }
+        }
+ 
+  </script>
     
 
   </body>
