@@ -9,7 +9,7 @@ Features many unblocked games.
 
 <h2>Easy Deployment</h2>
 
-[![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/DeltaUBNetwork/schoolsusthings/)
+[![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/DeltaUBNetwork/DeltaProxy/)
 
 ## Contribution Guide
   
@@ -17,7 +17,7 @@ WIP
 
 ## VPS Deployment
 ```sh
-git clone https://github.com/DeltaUBNetwork/schoolsusthings
+git clone https://github.com/DeltaUBNetwork/DeltaProxy
 npm install
 node .
 ```
