@@ -1,4 +1,4 @@
 language = "nodejs"
-run = "./main.sh"
-entrypoint = "index.js"
 onBoot = "chmod u+x main.sh"
+run = "chmod u+x main.sh && ./main.sh"
+entrypoint = "index.js"
