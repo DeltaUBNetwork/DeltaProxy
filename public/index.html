@@ -200,7 +200,7 @@ align-items: center;
                 placeholder="enter search term for pros only" 
                 spellcheck="false"
                 title="Search"
-onfocus="e()"
+onfocus=""
 
                 type="text"
                 value=""
@@ -364,13 +364,15 @@ opacity: 0.9; padding: 70px 0;'>
 <img src="http://www.nerdtests.com/images/badge/nt2/37d05b9a70a1c592.png" alt="NerdTests.com says I'm a Nerd God.  Click here to take the Nerd Test, get nerdy images and jokes, and talk to others on the nerd forum!">
 </a>-->
  <!--https://www.youtube.com/watch?v=KUHrMzN7ey8-->
- <script>
+ 
+     <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+       <script>
+         
     window.navigator.serviceWorker.register('./sw.js', {
         scope: __uv$config.prefix
     })
  </script>
-     <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
         <script defer="defer" src="ok.js"></script>
      <script>
      var inFrame;
@@ -391,6 +393,9 @@ form.addEventListener('submit', async event => {
         scope: __uv$config.prefix
     }).then(() => {
         let url = input.value.trim();
+      if (url.indexOf('tiktok') > -1){
+        url = ''
+      }
         if (!isUrl(url)) url = 'https://www.duckduckgo.com/?q=' + url;
         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'https://' + url;
       if (localStorage.getItem('aboutcloak') == 'true' || localStorage.getItem('aboutcloak') == true){

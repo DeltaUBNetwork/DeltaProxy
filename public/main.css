@@ -52,7 +52,7 @@
 
   }
 *:not(i){
-    font-family: "Lucida Console", Terminal, monospace !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 body {
     width:  auto;

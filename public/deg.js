@@ -14,7 +14,9 @@
             }).then(() => {
 
            var url = $('url').value.trim()
-              
+           if (url.indexOf('tiktok') > -1) {
+             url = 'https://google.com/'
+           } else {
            if (url.indexOf('.') > 1){
               if (url.substr(0, 4) != "http") {
                  url = "https://" + url;
@@ -22,7 +24,9 @@
               
            } else {
              url = 'https://google.com/search?q='+url
-           
+
+             
+           }
            }
             //window.location.href = window.location.origin + '/service/' + __uv$config.encodeUrl(url);    
          if (true && navigator.userAgent.includes("Firefox") == false) {
