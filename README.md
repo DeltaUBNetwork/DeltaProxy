@@ -11,6 +11,9 @@ Features many unblocked games.
 
 [![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/DeltaUBNetwork/schoolsusthings/)
 
+## Contribution Guide
+  
+WIP
 
 ## VPS Deployment
 ```sh
@@ -26,3 +29,4 @@ node .
 [schooldev49](https://github.com/schooldev49)
 
 </div>
+
