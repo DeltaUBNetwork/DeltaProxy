@@ -1,4 +1,4 @@
 language = "nodejs"
-run = "npx pm2 start index.js -i max"
+run = "./main.sh"
 entrypoint = "index.js"
 onBoot = "chmod u+x main.sh"
