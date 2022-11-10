@@ -4,10 +4,6 @@ fix=1
 
 
 # Stuff to do at first run(submodule, npm install).
-if [[ -d "public" && -n "$(find public -prune -empty 2>/dev/null)" ]] || [[ ! -d "public" ]]; then
-  npm install
- 
-fi
+npm ci
 
-
-npm start || [[ $fix = 1 ]] && npm install && npm update 
+npx pm2 start index.js -i max
