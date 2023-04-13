@@ -4,6 +4,6 @@ fix=1
 
 
 # Stuff to do at first run(submodule, npm install).
-npm ci
+#npm ci
 
-npx pm2 start index.js -i max
+npx pm2 start index.js -i max  || npm install && npx pm2 start index.js -i max
