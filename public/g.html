@@ -302,15 +302,42 @@ document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoo
        function fullscreen(){
        let e = document.getElementById("gameframe"); e.requestFullscreen();
        }
+       
+        let inFrame
+
+try {
+    inFrame = window !== top
+} catch (e) {
+    inFrame = true
+}
       function openGame(){
         // window.location.origin + '/schoolMath/' + __uv$config.encodeUrl(site);  
-        if (!source.includes("http")) {
-           
-          openSite(source, 'unproxied')
-        } else {
-          openSite(source, 'proxied')
-               }
-      }
+          var oklolE = window.open("about:blank", "_blank")
+      if (!oklolE || oklolE.closed && !inFrame) {
+       alert("Allow popups for this to work!")
+        
+      } else {
+        const doc = oklolE.document
+        const iframe = doc.createElement("iframe")
+        const style = iframe.style
+        const link = doc.createElement("link")
+
+        doc.title = "Google Classroom"
+        link.rel = "icon";
+        link.href = "https://ssl.gstatic.com/classroom/favicon.png";
+        
+        iframe.src = document.querySelector('iframe').src 
+        
+        style.position = "fixed"
+        style.top = style.bottom = style.left = style.right = 0
+        style.border = style.outline = "none"
+        style.width = style.height = "100%"
+
+        doc.body.appendChild(iframe)
+
+        
+    }
+  } 
        document.querySelector('iframe').onload = function(){
          document.getElementById('loadscreen').style.display = 'none';
        }
@@ -345,13 +372,7 @@ document.querySelector("link[rel*='icon']").href = localStorage.getItem('tabSpoo
     alert("Error while loading game..")
   }
     
-        let inFrame
-
-try {
-    inFrame = window !== top
-} catch (e) {
-    inFrame = true
-}
+ 
         function openSite (site, inMy) {
         
        if (inMy == "proxied"){window.navigator.serviceWorker.register('./sw.js', {
