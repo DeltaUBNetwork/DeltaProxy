@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"6271bb69c938d326611016571f7eb518","lockfileHash":"b3a805e288a9a8b01679d4956446b928","guessedImports":["@rollup/plugin-node-resolve","lodash-es","rollup-plugin-babel-minify","warcio","ws"],"guessedImportsHash":"2f73ffd13827922202c166335e2b0f97"}}}

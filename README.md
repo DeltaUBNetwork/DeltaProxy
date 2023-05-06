@@ -1,9 +1,9 @@
-<h1 align="center"><b>Delta OS Proxy</b></h1>
+<h1 align="center"><b>Delta OS Pr0xy</b></h1>
 
 <p align="center">
-This is a new revolutionary web proxy designed to bypass firewalls.
+This is a new revolutionary web p0oxy designed to bypss firewalls.
 <br>
-Features many unblocked games.
+Features many unbl0cked games.
 </p>
 <div align="center">
 
